@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Link to boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link to JavaScript script -->
+    <script src="scripts/script.js" defer></script>
+
+    <title>Mijn OBA</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo/OBA_rood_rgb.png" alt="OBA logo" class="logo" width="80px">
+
+        <div class="wrapper">
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class='bx bx-search icon'></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Zoek.." id="myInput" onkeyup="filterFunction()">
+                </div>
+            </div>
+
+            <!-- <div class="menudropdown" aria-label="Menu">
+                <button class="menubutton" aria-label="Menu">Menu</button>
+            </div>  -->
+
+            <div class="profile">
+                <i class='bx bxs-user icon'></i>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Welkom, Fatima!</h1>
+
+        <h2>Mijn OBA:</h2>
+
+        <div class="menuview">
+            <button class="pagebutton" aria-label="Welkom">Welkom</button>
+            <button class="pagebutton" aria-label="Abonnement">Abonnement</button>
+            <button class="pagebutton" aria-label="Leeslijst">Leeslijst</button>
+            <button class="pagebutton" aria-label="Uitleengeschiedenis">Uitleengeschiedenis</button>
+            <button class="pagebutton" aria-label="Reserveringen">Reserveringen</button>
+            <button class="pagebutton" aria-label="Betaalgeschiedenis">Betaalgeschiedenis</button>
+            <button class="pagebutton" aria-label="Instellingen">Instellingen</button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,34 +1,77 @@
-# Corporate identity
-Ontwerp en maak voor een opdrachtgever een component of website op basis van een bestaande huisstijl 
+# All Human - Accessible Website
 
+Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+ 
 ## Context
-Deze leertaak hoort bij sprint 4 Look and Feel. Dit is een opdracht die je individueel uitvoert voor een opdrachtgever.
 
-Bij deze leertaak horen de volgende deeltaken:
+Deze leertaak hoort bij sprint 3: All Human. 
+Dit is een opdracht die je individueel of in een team uitvoert voor een opdrachtgever.
 
-* [Living styleguide](https://github.com/fdnd-task/look-and-feel-living-styleguide)
-* [Custom properties](https://github.com/fdnd-task/look-and-feel-custom-properties)
+Bij deze leertaak hoort de deeltaak:
+
+- [All human - WGAG audit](https://github.com/fdnd-task/all-human-wcag-audit)
 
 ## Doel van deze opdracht
-Je leert hoe onderdelen van een website op basis van een bestaande huisstijl maakt.
+
+Je leert hoe je een (gedeelte van een) website toegankelijk kan ontwerpen, bouwen en testen.
 
 ## Werkwijze
-Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt. De development lifecycle bestaat uit de stappen: Analyseren, Ontwerpen, Bouwen, Integreren en Testen.
 
-### Aanpak
-1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).  
-2. Fork deze leertaak
-3. Kopieer/plak de user story waar jij aan gaat werken naar de Wiki van de geforkte repository, dit ga je ontwerpen en maken
-4. Documenteer je proces a.h.v de development life cycle
-5. En schrijf een goede readme
+Deze opdracht gaat over alle fases van de **development-lifecycle** [analyseren](#analyseren), [ontwerpen](#ontwerpen), [bouwen](#bouwen), integreren en testen.
+
+
+### Analyseren
+
+In de analysefase inventariseer je wat er moet gebeuren om een taak uit te voeren en formuleer je een aantal uitgangspunten waar je ontwerp aan moet voldoen.
+
+De vorige sprint heb je individueel of in een team een opdracht voor een opdrachtgever ontworpen en gemaakt. Na 3 weken heb je tijdens de sprint-review je opdracht laten zien en feedback gekregen. Deze sprint ga je verder met de opdracht, ga je de feedback verwerken of, als de opdracht goed was, kies je een nieuwe user story om aan te werken. 
+
+Eerst ga je met de studenten die dezelfde opdrachtgever hebben de [sprint-review bespreken](#1-sprint-review-bespreken), daarna ga je aan de slag met de [leertaak](#2-aanpak-leertaak). 
+
+
+#### 1. Sprint-review bespreken
+
+0. Lees eerst de instructies van deze leertaak zorgvuldig door.
+1. Bespreek met de studenten die dezelfde opdrachtgever hebben de sprint-review van de vorige sprint.
+2. Bespreek de feedback van de opdrachtgever.
+3. Bekijk en bespreek het door jullie gemaakte werk. Maak individueel aantekeningen.
+4. Bekijk de _Backlog_ op https://github.com/fdnd-agency/.
+5. Is de _user story_ waar je aan hebt gewerkt af? Dan verplaats je deze taak naar 'done'.
+6. Is de _user story_ nog niet af? Laat deze dan 'In Progress' staan.
+7. Hebben jullie met de opdrachtgever nieuwe dingen bedacht? Schrijf dan nieuwe _user stories_ en voeg ze toe aan de _Backlog_.
+
+
+#### 2. Aanpak Leertaak
+
+1. Fork en Clone deze leertaak.
+2. Maak issues van de feedback die je hebt besproken.
+3. Doe een Lighthouse test op de website uit de vorige sprint, documenteer de gevonden problemen en maak issues aan.
+4. Voer een aantal handmatige tests uit op de website uit de vorige sprint, documenteer de gevonden problemen en maak issues aan.
+
+
+## Ontwerpen
+
+In de ontwerpfase neem je ontwerpbeslissingen en zorg je dat je precies weet wat je moet gaan bouwen.
+
+1. Verwerk de feedback en testresultaten in een nieuw ontwerp.
+2. Maak schetsen zodat je niet vergeet wat je wil veranderen, of pas je vorige ontwerp aan in Figma of XD.
+3. Maak eerst een kopie van je ontwerp en bewaar de vorige versie. Schrijf annotaties (korte uitleg) bij de wijzigingen in je ontwerp. 
+
+
+### Bouwen
+
+In de bouwfase realiseer je de beslissingen uit de ontwerpfase in HTML, CSS en JS.
+
+1. Schrijf elke sprint nieuwe code, ook al blijven onderdelen van de website hetzelfde. Dit is even wat werk, maar zo leer je beter coderen en nettere code schrijven.
+2. Verbeter de website op basis van de testresultaten.
+3. Verbeter de website op basis van de feedback die je hebt gekregen en/of nieuwe ideeën die je hebt bedacht.
+   
 
 ## Definition of done
 
-Focus sprint 4 - De focus van deze sprint ligt op het toepassen van een huisstijl en het maken van formulieren.
-
 Deze opdracht is done als:
 
-- [ ] de door jou gemaakte onderdelen onderbouwd en aantoonbaar voldoen aan de huisstijl van de opdrachtgever
-- [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle
-- [ ] je hebt je werk gedocumenteerd in de Readme en Wiki (user story, ontwerpbeslissingen, schetsen en code voorbeelden)
-- [ ] de website op Github staat en een live url heeft
+- [ ] Je hebt een Lighthouse test gedaan en gevonden problemen verholpen
+- [ ] Je hebt een serie handmatige tests gedaan en gevonden problemen verholpen
+- [ ] Je hebt je werk gedocumenteerd in de Readme en Wiki 
+- [ ] De website staat op GitHub en heeft een live url
