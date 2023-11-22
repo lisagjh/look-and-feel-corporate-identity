@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="script.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
 
     <title>Mijn OBA</title>
 </head>
@@ -23,7 +23,7 @@
         <nav>
             <ul>
                 <li><i class='bx bx-menu-alt-right icon'></i></li>
-                <li><i class='bx bxs-bell icon' ></i></li>
+                <li><i class='bx bxs-bell icon'></i></li>
                 <li><i class='bx bxs-user icon'></i></li>
             </ul>
         </nav>
@@ -33,21 +33,23 @@
         <div class="container">
             <h1>Welkom, gebruiker!</h1>
 
-            <section class="search-bar">
-                <form>
-                    <i class="bx bx-search icon"></i>
-                    <input type="text" placeholder="placeholder">
-                </form> 
-            </section>
+            <div class="sidebar">
+                <section class="search-bar">
+                    <form>
+                        <i class="bx bx-search icon"></i>
+                        <input type="text" placeholder="Zoek...">
+                    </form>
+                </section>
 
-            <section class="home-buttons">
-                <button>Abonnement Beheren</button>
-                <button>Berichten</button>
-                <button>Leeslijst</button>
-                <button>Uitleningen</button>
-                <button>Gereserveerde Items</button>
-                <button>Leengeschiedenis</button>
-            </section>
+                <section class="home-buttons">
+                    <button>Abonnement Beheren</button>
+                    <button>Berichten</button>
+                    <button>Leeslijst</button>
+                    <button>Uitleningen</button>
+                    <button>Gereserveerde Items</button>
+                    <button>Leengeschiedenis</button>
+                </section>
+            </div>
 
             <!-- CAROUSEL -->
             <!-- Tutorial: https://medium.com/@algopoint.ltd/how-to-create-a-slideshow-carousel-using-html-css-js-7ab0561b39b3 -->
@@ -55,7 +57,8 @@
 
             <div class="carousel-container">
                 <div class="news-title">
-                    <img src="./assets/illustraties/krantlezen.png" width="80px" alt="illustratie van iemand die de krant leest">
+                    <img src="./assets/illustraties/krantlezen.png" width="80px"
+                        alt="illustratie van iemand die de krant leest">
                     <h2>Nieuws voor jou:</h2>
                 </div>
                 <div class="carousel-view">

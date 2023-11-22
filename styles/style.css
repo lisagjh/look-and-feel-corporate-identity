@@ -29,8 +29,8 @@
   --spacing-big: 1.4em;
 
   --heading-one: 3em;
-  --heading-two: 1.5em;
-  --heading-three: 1.75em
+  --heading-two: 1.75em;
+  --heading-three: 1.5em
 
   --bigfont: "AvenirBlack", Arial, Helvetica, sans-serif;
   --regularfont: "AvenirMedium", Arial, Helvetica, sans-serif;
@@ -222,12 +222,17 @@ h1 {
 
 h2 {
   font-size: var(--heading-two);
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.5;
 }
 
 /* icons */
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* main */
@@ -238,28 +243,33 @@ h2 {
 
 /* search bar */
 
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--mediumcolor);
+}
 
 .search-bar form i {
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-right: var(--spacing-small);
+  font-size: 1rem;
 }
 
 .search-bar form {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: var(--spacing-half);
-  height: 1.5eem; 
+  justify-content: center;
+  padding: var(--spacing-half); 
   border-radius: 6px;
-  width: 80vw;
   background: var(--lighter);
 }
 
 .search-bar input {
   background: var(--lighter);
-  height: 100%;
-  width: 100%;
   font-size: 1rem;
   font-family: AvenirMedium 'sans serif';
+  padding: var(--spacing-half);
   outline: none;
   border: none;
 }
@@ -275,7 +285,11 @@ h2 {
 }
 
 .home-buttons button {
-  width: 16rem;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 14rem;
   font-size: 1rem;
   color: var(--dark);
   padding: var(--spacing-half);
@@ -318,16 +332,27 @@ h2 {
 .carousel-view {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 20px;
 }
 
 .carousel-view button {
   display: flex;
-  align-self: center;
-  height: 4em;
+  align-items: center;
+  height: 15rem;
   width: 2em;
   background-color: transparent;
   border: none;
+}
+
+
+/* poging tot fading van de items */
+.carousel-view button:first-of-type {
+  box-shadow: 10px 1px 10px var(--mediumcolor);
+}
+
+.carousel-view button:nth-of-type(2) {
+  box-shadow: -10px 1px 10px var(--mediumcolor);
 }
 
 button .icon {
@@ -407,3 +432,102 @@ footer {
   background-color: var(--light);
   padding: var(--spacing-one);
 }
+
+
+/* user overview page */
+
+.user-container {
+  display: flex;
+  flex-direction: row;
+  padding: var(--spacing-one);
+  margin-bottom: var(--spacing-big);
+  border-radius: 6px;
+  box-shadow: 1px 1px 7px var(--mediumcolor);
+}
+
+.user-title {
+  display: flex;
+  flex-direction: row;
+  padding: var(--spacing-half);
+
+}
+
+.user-info li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--mediumcolor);
+  padding: var(--spacing-small);
+  list-style: none;
+}
+
+.user-info .icon {
+  color: var(--mediumcolor);
+  padding-right: var(--spacing-half);
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {  
+
+  .home-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .home-buttons button {
+    max-width: 16rem;
+  }
+
+  .user-view { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  } 
+}
+
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-areas: 
+    "welcome welcome"
+    "pages news"
+    "footer footer";
+    gap: var(--spacing-big);
+  }
+
+  .container h1 {
+    grid-area: welcome;
+  }
+  .sidebar {
+    grid-area: pages;
+  }
+  .carousel-container {
+    grid-area: news;
+    max-width: 65vw;
+  }
+
+  .sidebar {
+    max-width: 35vw;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}  
+
+
+  /* 760px */
+
+  /* 1024px */
+
+  /* 1280px */
