@@ -110,11 +110,12 @@ h3 {
 }
 
 .login span {
-  color: var(--accent-color);
+  color: var(--tertiary-color);
   cursor: pointer;
 }
 
 .login span:hover {
+  color: var(--accent-color);
   text-decoration: underline;
 }
 
