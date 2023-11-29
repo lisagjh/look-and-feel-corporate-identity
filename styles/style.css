@@ -430,7 +430,6 @@ button .icon:active {
   text-decoration-thickness: 1px;
 }
 
-
 /* geleende items */
 
 .user-activites {
@@ -451,11 +450,15 @@ button .icon:active {
 .book-overview {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-half);
 }
 
 .book {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 30rem;
   padding: var(--spacing-half);
   margin: var(--spacing-small);
   border-radius: var(--border-radius);
@@ -473,7 +476,8 @@ footer {
   padding: var(--spacing-half);
 }
 
-/* media query */
+
+/** media query */
 
 @media only screen and (min-width: 620px) {
   .wrapper {
@@ -529,7 +533,8 @@ footer {
     display: grid;
     grid-template-areas:
       "head head"
-      "aside main"
+      "aside news"
+      "book book"
       "foot foot";
   }
 
@@ -546,7 +551,20 @@ footer {
   }
 
   .user-wrapper .news-carousel {
-    grid-area: main;
+    grid-area: news;
     width: 65vw;
+  }
+
+  .user-activites {
+    grid-area: book;
+    width: 100vw;
+  }
+
+  .book-overview {
+    width: 50vw;
+  }
+
+  .book {
+    width: 100%;
   }
 }
