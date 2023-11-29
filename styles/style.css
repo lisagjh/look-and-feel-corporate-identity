@@ -103,6 +103,21 @@ h3 {
   padding: var(--spacing-big);
 }
 
+.login p {
+  font-size: 0.8rem;
+  color: var(--tertiary-color);
+  padding-top: var(--spacing-regular);
+}
+
+.login span {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.login span:hover {
+  text-decoration: underline;
+}
+
 /* form */
 
 form {
