@@ -200,6 +200,15 @@ ul {
   margin: var(--spacing-small);
 }
 
+.home-wrapper a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.home-wrapper a:visited {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
 /* user overview */
 
@@ -252,6 +261,209 @@ ul {
       padding: 0;
     }
   }
+}
+
+/* User Page */
+
+.user-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-big);
+  margin: var(--spacing-small);
+}
+
+.user-wrapper .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-wrapper .search-bar form {
+  width: 100%;
+  max-width: 16rem;
+}
+
+/* menu buttons */
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-half);
+}
+
+.home-buttons button {
+  width: 100%;
+  max-width: 16rem;
+  font-size: 1rem;
+  color: var(--dark);
+  padding: var(--spacing-half);
+  background-color: var(--primary);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px var(--secondary-color);
+}
+
+.home-buttons button:hover {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+.home-buttons button:active {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  translate: 0% 5%;
+}
+
+/* news carousel */
+
+.news-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.news-title img {
+  padding-right: var(--spacing-small);
+}
+
+.user-wrapper h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
+}
+
+/* carousel */
+
+.carousel-container {
+  margin-top: var(--spacing-big);
+  margin-bottom: var(--spacing-big);
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-small);
+}
+
+.carousel-view button {
+  display: flex;
+  align-self: center;
+  height: 4em;
+  width: 2em;
+  background-color: transparent;
+  border: none;
+}
+
+button .icon {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+button .icon:hover {
+  color: var(--accent-color);
+}
+
+button .icon:active {
+  scale: 1.3;
+  translate: 0% 10%;
+}
+
+.item-list {
+  display: flex;
+  width: 80vw;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.item-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-half);
+  margin: var(--spacing-regular);
+  scroll-snap-align: center;
+  --border-radius: 10px;
+  border-radius: var(--border-radius);
+  width: fit-content;
+  box-shadow: 2px 2px 10px var(--secondary-color);
+}
+
+.news-image {
+  background-color: var(--tertiary-color);
+  background-image: url(/assets/obasfeer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 6rem;
+  border-radius: var(--border-radius);
+}
+
+.news-image:hover {
+  background-blend-mode: normal;
+  background-size: 120%;
+  background-position: center;
+}
+
+.news-text {
+  width: 9rem;
+  max-height: 8rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.news-text h3 {
+  margin-top: var(--spacing-small);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 1px;
+}
+
+
+/* geleende items */
+
+.user-activites {
+  display: flex;
+  margin-top: var(--spacing-big);
+}
+
+.activity-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.activity-title img {
+  padding-right: var(--spacing-small);
+}
+
+.book-overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-half);
+  margin: var(--spacing-small);
+  border-radius: var(--border-radius);
+  border: var(--border-one);
+}
+
+.book img {
+  padding: var(--spacing-small);
 }
 
 /* FOOTER */
@@ -311,5 +523,30 @@ footer {
     width: 100%;
     max-width: 30rem;
     max-height: 10rem;
+  }
+
+  .user-wrapper {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "aside main"
+      "foot foot";
+  }
+
+  .user-wrapper h1 {
+    grid-area: head;
+    font-size: var(--heading-one);
+    width: 15ch;
+    padding: var(--spacing-regular);
+  }
+
+  .user-wrapper aside {
+    grid-area: aside;
+    width: 35vw;
+  }
+
+  .user-wrapper .news-carousel {
+    grid-area: main;
+    width: 65vw;
   }
 }
