@@ -19,6 +19,8 @@ Toon in een overzicht alle abonnementen van een familie met een verwijzing naar 
 
 ‼️ Momenteel alleen geoptimaliseerd voor kleine schermen.
 
+![mockup](https://github.com/lisagjh/look-and-feel-corporate-identity/assets/131701505/87522fa3-bd61-4076-a7b6-6abdd0ecac62)
+
 
 ## Kenmerken
 Deze website is gemaakt met HTML, CSS en JavaScript.
